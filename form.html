@@ -1,0 +1,403 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Name-->
+<form class="form">
+<div class="profile1">
+	<h2>User Profile 1</h2>
+	    <div class="form-group">
+		    <label for="email"> Name:</label>
+		    <div class="relative">
+			    <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+" required="" title="Username should only contain letters." autocomplete="" placeholder="Type your name here...">
+			    <i class="fa fa-user"></i>
+		    </div>
+	    </div>
+<!--Name-->
+
+<!--Age-->
+	<div class="form-group">
+	    <label for="email">Age:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="Age" required="" placeholder="Type your Age..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+	</div>
+<!--Age-->
+
+<!--Gender-->
+    <div class="form-group">
+        <label for="gender">Gender:</label>
+            <select class="form-control" id="gender">
+         	    <option>Male</option>
+         	    <option>Female</option>
+            </select>
+    </div>
+<!--Gender-->
+
+
+<!--Weight-->
+    <div class="form-group row">
+        <div class="col-md-8">
+            <label for="weight">Weight:</label>
+         	<input class="form-control" type="Weight"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+         	<div class="col-md-4">
+	            <div class="form-group">
+                    <label for="gender">Units:</label>
+                        <select class="form-control" id="gender">
+         	                <option>Kg</option>
+         	                <option>Lbs</option>
+                        </select>
+                </div>
+            </div>
+        </div>
+<!--Weight-->
+
+<!--Height-->
+    <div class="form-group row">
+        <div class="col-md-8">
+            <label for="height">Height:</label>
+         	<input class="form-control" type="Height"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+         	<div class="col-md-4">
+	            <div class="form-group">
+                    <label for="height">Units:</label>
+                        <select class="form-control" id="height">
+         	                <option>Inches</option>
+         	                <option>Centimeters</option>
+         	                <option>Feet</option>
+                        </select>
+                </div>
+            </div>
+    </div>
+<!--Height-->
+
+<!--Religion-->
+    <div class="form-group row">
+        <div class="col-md-8">
+         	<label for="Religion">Religion:</label>
+         	<input class="form-control" type="Religion"   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+            <div class="col-md-4">
+	            <div class="form-group">
+                    <label for="religion">Select:</label>
+                        <select class="form-control" id="Religion">
+         	                <option>Hindu</option>
+         	                <option>Muslim</option>
+         	                <option>Christian</option>
+         	                <option>Others</option>
+                        </select>
+                </div>
+            </div>
+    </div>
+<!--Religion-->
+
+
+<!--Caste-->
+	  <div class="form-group">
+	  	<label for="email">Caste:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="Age" required="" placeholder="Type your Caste..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+
+	    </div>
+	     <button class="btn btn-primary firstpagebutton">Next</button>
+<!--Caste-->
+</div>
+
+
+<!--Next Page1-->
+<!--Parent Name-->
+	<div class="profile2">
+	  <h2>User Profile2</h2>
+	  <div class="form-group">
+		  <label for="email"> Parent Name:</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+" required=""  title="Username should only contain letters. e.g. Piyush Gupta" autocomplete="" placeholder="Type your Parent Name here...">
+			  <i class="fa fa-user"></i>
+		  </div>
+	  </div>
+<!--Parent Name-->
+
+
+<!--Address1-->
+	  <div class="form-group">
+	  	<label for="email">Address1:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="Age" required="" placeholder="Type your Address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-address-card-o" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Address1-->
+
+<!--Address2-->
+	  <div class="form-group">
+	  	<label for="email">Address2:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="Age" required="" placeholder="Type your Address..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-address-card-o" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Address2-->
+
+<!--Phone Number-->
+    <div class="form-group">
+	  	<label for="email">Phone Number:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="text" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" required="" placeholder="Type your Mobile Number...">
+	  		<i class="fa fa-phone"></i>
+	  	</div>
+	  </div>
+<!--Phone Number-->
+
+
+<!--Picked up in-->
+    <div class="form-group">
+	  	<label for="email">Picked up in:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="url" pattern="https?://.+">
+	  		<i class="fa fa-building"></i>
+	  	</div>
+	</div>
+<!--Picked up in-->
+
+<!--Picked up by-->
+    <div class="form-group">
+	  	<label for="email">Picked up By:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="url" pattern="https?://.+">
+	  		<i class="fa fa-building"></i>
+	  	</div>
+	</div>
+<!--Picked up by-->
+
+
+<!--Date-->
+<div class="form-group row">
+	<div class="col-md-6">
+	  	<label for="email">Date:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="date">
+
+	  	</div>
+	</div>
+<!--Date-->
+
+
+<!--Time-->
+    <div class="col-md-6">
+	  	<label for="email">Time:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="time">
+	  	</div>
+	</div>
+
+</div>
+<button class="btn btn-primary secondpagebutton">Next</button>
+<button class="btn btn-primary secondpagebackbutton">Previous</button>
+<!--Time-->
+<!--page ended-->
+
+</div>
+
+
+<!--Next Page2-->
+<!--Parent's status-->
+	<div class="profile3">
+	  <h2>User Profile3</h2>
+	  <div class="form-group">
+		  <label for="email"> Parent's status:</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+			  <i class="fa fa-user"></i>
+		  </div>
+	  </div>
+<!--Parent's status-->
+
+<!--Reason for coming out-->
+<div class="form-group">
+    <label for="Reason for coming out">Reason for coming out:</label>
+    <textarea class="form-control" id="Reason for coming out" rows="3"></textarea>
+  </div>
+<!--Reason for coming out-->
+
+
+<!--Can Speak-->
+ <div class="form-group">
+	  	<label for="email">Can Speak:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-microphone" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Can Speak-->
+
+<!--Can Write-->
+ <div class="form-group">
+	  	<label for="email">Can Write:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-pencil" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Can Write-->
+
+<!--Education-->
+ <div class="form-group">
+	  	<label for="email">Education:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  placeholder="Type your Education..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-book" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Education-->
+
+<!--Counselling-->
+ <div class="form-group">
+	  	<label for="email">Counselling by:</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        </div>
+	    </div>
+<!--Counselling-->
+
+
+<!--Report to CWC By -->
+ <div class="form-group">
+	  	<label for="email">Report to CWC By :</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-bug" aria-hidden="true"></i>
+        </div>
+	    </div>
+	    <button class="btn btn-primary thirdpagebutton">Next</button>
+	    <button class="btn btn-primary thirdpagebackbutton">Previous</button>
+<!--Report to CWC By -->
+<!--Page ended-->
+</div>
+
+
+
+<!--Next Page3-->
+<!--Report to CWC to -->
+<div class="profile4">
+	<h2>User Profile4</h2>
+<div class="form-group">
+	  	<label for="email">Report to CWC to :</label>
+	  	<div class="relative">
+		  	<input class="form-control" type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+		  	<i class="fa fa-bug" aria-hidden="true"></i>
+        </div>
+	    </div>
+<!--Report to CWC to -->
+
+<!--Date-->
+<div class="form-group row">
+	<div class="col-md-6">
+	  	<label for="email">Date:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="date">
+
+	  	</div>
+	</div>
+<!--Date-->
+
+
+<!--Time-->
+    <div class="col-md-6">
+	  	<label for="email">Time:</label>
+	  	<div class="relative">
+	  		<input class="form-control" type="time">
+	  	</div>
+	</div>
+</div>
+<!--Time-->
+
+<!--status-->
+<div class="form-group">
+		  <label for="email"> status:</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+			<i class="fa fa-check" aria-hidden="true"></i>
+		  </div>
+	  </div>
+<!--status-->
+
+
+<!--Student stayed In SB for -->
+<div class="form-group">
+		  <label for="email"> Student stayed In SB for :</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+		  </div>
+	  </div>
+<!--Student stayed In SB for -->
+
+
+<!--Others -->
+<div class="form-group">
+		  <label for="email"> Others :</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+		  </div>
+	  </div>
+<!--Others -->
+
+<!--CWC Number  -->
+<div class="form-group">
+		  <label for="email"> CWC Number  :</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+		  </div>
+	  </div>
+<!--CWC Number-->
+
+<!--SB number  -->
+<div class="form-group">
+		  <label for="email"> SB number :</label>
+		  <div class="relative">
+			  <input class="form-control" id="name" type="text" pattern="[a-zA-Z\s]+">
+		  </div>
+	  </div>
+
+<!--SB number -->
+
+<!--Attachment-->
+		<!-- <div class="form-group">
+			<label for="email">Attachment:</label>
+	  	<div class="relative">
+	  		<div class="input-group">
+          <label class="input-group-btn">
+            <span class="btn btn-default">
+                Browse&hellip; <input type="file" style="display: none;" multiple>
+            </span>
+          </label>
+          <input type="text" class="form-control" required="" placeholder="Attachment..." readonly>
+          <i class="fa fa-link"></i>
+      	</div>
+	  	</div>
+	  </div> -->
+<!--Attachment-->
+
+<!--submit & reset-->
+	  <div class="tright">
+	  	<a href=""><button class="movebtn movebtnsu fourthpagebackbutton" type="back"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous </button></a>
+	  	<a href=""><button class="movebtn movebtnre" type="Reset"><i class="fa fa-fw fa-refresh"></i> Reset </button></a>
+	  	<a href=""><button class="movebtn movebtnsu" type="Submit">Submit <i class="fa fa-fw fa-paper-plane"></i></button></a>
+	  </div>
+	</div>
+<!--submit & reset-->
+	</form>
+	<script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>
